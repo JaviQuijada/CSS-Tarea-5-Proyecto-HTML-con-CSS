@@ -1,2 +1,9 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.heder_principal_contenedor-nav-logo {
+    img {
+        width: 50%;
+
+    }
+}
