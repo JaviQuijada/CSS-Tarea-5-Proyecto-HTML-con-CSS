@@ -1,3 +1,23 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+a  {
+    text-decoration: none;
+    font-family: $font-segundary;
+    color: $white-gray;
+}
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: $font-primari;
+    color: $orange;
+}
+
+h2, h3, h4 {
+    font-family: $font-segundary;
+}
+p {
+    font-family: $font-text;
+}

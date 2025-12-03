@@ -2,3 +2,20 @@
 @use "../abstracts/mixins" as *;
 
 
+.main_principal {
+
+    &-hero {
+        &-1 {
+            background-image: url(../../img/Top-Mistral.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 51vh;
+        }
+        &-2 {
+            background-image: url(../../img/background2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 83vh;
+        }
+    }
+}

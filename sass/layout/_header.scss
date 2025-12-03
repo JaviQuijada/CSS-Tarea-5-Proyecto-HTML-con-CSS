@@ -1,9 +1,38 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.heder_principal_contenedor-nav-logo {
-    img {
-        width: 50%;
 
+.header_principal {
+        background-image: url(../../img/background-body.png);
+
+    &_contenedor {
+        margin: 0px 100px 0px 100px;
+        padding: 30px;
+        &-nav {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            &-index {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    font-size: 20px;
+                }
+            }
+            &-logo {
+                position: relative;
+
+                img {
+                    position: relative;
+                    width: 100%;
+                    filter: drop-shadow(12px 32px 20px rgba(0, 0, 0, 4.35));
+                    
+                }
+            }
+            &-title {
+                font-size: 88px;
+                font-family: $font-segundary;
+                max-width: 50%;
+            }
+        }
     }
 }

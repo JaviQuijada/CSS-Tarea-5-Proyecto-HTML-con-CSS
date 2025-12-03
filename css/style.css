@@ -5,8 +5,76 @@
   box-sizing: border-box;
 }
 
-.heder_principal_contenedor-nav-logo img {
-  width: 50%;
+.header_principal {
+  background-image: url(../../img/background-body.png);
+}
+.header_principal_contenedor {
+  margin: 0px 100px 0px 100px;
+  padding: 30px;
+}
+.header_principal_contenedor-nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.header_principal_contenedor-nav-index {
+  display: flex;
+  justify-content: space-between;
+}
+.header_principal_contenedor-nav-index a {
+  font-size: 20px;
+}
+.header_principal_contenedor-nav-logo {
+  position: relative;
+}
+.header_principal_contenedor-nav-logo img {
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+}
+.header_principal_contenedor-nav-title {
+  font-size: 88px;
+  font-family: "Bebas Neue", sans-serif;
+  max-width: 50%;
+}
+
+.main_principal-hero-1 {
+  background-image: url(../../img/Top-Mistral.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 51vh;
+}
+.main_principal-hero-2 {
+  background-image: url(../../img/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 83vh;
+}
+
+body {
+  background-color: #222222;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #FF6600;
+}
+
+h2, h3, h4 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
 }
 
 /*# sourceMappingURL=style.css.map */
