@@ -2,20 +2,54 @@
 @use "../abstracts/mixins" as *;
 
 
-.main_principal {
+.main_principal-hero {
 
-    &-hero {
         &-1 {
+            background-image: url(../../img/background2.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 83vh;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: flex-end;
+            &-container-tv {
+                perspective: 800px;
+                transform-style: preserve-3d;
+                transform: rotateY(49deg) rotateX(3deg) skewY(3deg);
+                transform-origin: center bottom;
+                position: relative;
+                width: 380px;
+                height: 247px;
+                bottom: 156px;
+                right: 224px;
+                &-clases a {
+                    font-family: $font-primary;
+                    color: $orange;
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+                &-info a {
+                    font-family: $font-segundary;
+                    color: $orange2;
+                    font-size: 25px;
+                }
+                &-shop a {
+                    font-family: $font-subtitle;
+                    color: $yellow;
+                    font-size: 16px;
+                }
+                &-contact a {
+                    font-family: $font-title;
+                    color: $white-gray;
+                    font-size: 16px;
+                }
+
+            }  
+        }
+        &-2 {
             background-image: url(../../img/Top-Mistral.png);
             background-repeat: no-repeat;
             background-size: cover;
             height: 51vh;
         }
-        &-2 {
-            background-image: url(../../img/background2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 83vh;
-        }
-    }
 }

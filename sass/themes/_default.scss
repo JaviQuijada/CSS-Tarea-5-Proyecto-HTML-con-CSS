@@ -3,21 +3,16 @@
 
 a  {
     text-decoration: none;
-    font-family: $font-segundary;
-    color: $white-gray;
+   
 }
 ul {
     list-style: none;
 }
 
-h1 {
-    font-family: $font-primari;
-    color: $orange;
-}
 
-h2, h3, h4 {
-    font-family: $font-segundary;
-}
-p {
-    font-family: $font-text;
+.separetion {
+    background-image: url(../../img/baliza.png);
+    height: 21vh;
+    bottom: 82px;
+    position: relative;
 }

@@ -7,6 +7,7 @@
 
 .header_principal {
   background-image: url(../../img/background-body.png);
+  position: relative;
 }
 .header_principal_contenedor {
   margin: 0px 100px 0px 100px;
@@ -22,6 +23,7 @@
 }
 .header_principal_contenedor-nav-index a {
   font-size: 20px;
+  color: #0CA6D9;
 }
 .header_principal_contenedor-nav-logo {
   position: relative;
@@ -32,49 +34,85 @@
   filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
 }
 .header_principal_contenedor-nav-title {
-  font-size: 88px;
-  font-family: "Bebas Neue", sans-serif;
-  max-width: 50%;
+  color: #d9451c;
+  text-align: right;
+  font-size: 97px;
+  font-family: "Road Rage", sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+  margin-top: 48px;
 }
 
 .main_principal-hero-1 {
+  background-image: url(../../img/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 83vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.main_principal-hero-1-container-tv {
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transform: rotateY(49deg) rotateX(3deg) skewY(3deg);
+  transform-origin: center bottom;
+  position: relative;
+  width: 380px;
+  height: 247px;
+  bottom: 156px;
+  right: 224px;
+}
+.main_principal-hero-1-container-tv-clases a {
+  font-family: "Oswald", sans-serif;
+  color: #d9451c;
+  font-size: 50px;
+  font-weight: 700;
+}
+.main_principal-hero-1-container-tv-info a {
+  font-family: "Bebas Neue", sans-serif;
+  color: #E77124;
+  font-size: 25px;
+}
+.main_principal-hero-1-container-tv-shop a {
+  font-family: "Roboto Slab", serif;
+  color: #FFD700;
+  font-size: 16px;
+}
+.main_principal-hero-1-container-tv-contact a {
+  font-family: "Road Rage", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.main_principal-hero-2 {
   background-image: url(../../img/Top-Mistral.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 51vh;
 }
-.main_principal-hero-2 {
-  background-image: url(../../img/background2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 83vh;
+
+body.principal {
+  background-color: #222222;
 }
 
-body {
-  background-color: #222222;
+.main_principal {
+  position: relative;
+  bottom: 83px;
 }
 
 a {
   text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  color: #FFFFFF;
 }
 
 ul {
   list-style: none;
 }
 
-h1 {
-  font-family: "Oswald", sans-serif;
-  color: #FF6600;
-}
-
-h2, h3, h4 {
-  font-family: "Bebas Neue", sans-serif;
-}
-
-p {
-  font-family: "Roboto Slab", serif;
+.separetion {
+  background-image: url(../../img/baliza.png);
+  height: 21vh;
+  bottom: 82px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,6 @@
 @use "../abstracts/variables" as *;
 
 
-body {
+body.principal {
     background-color: $gray-dark;
 }
