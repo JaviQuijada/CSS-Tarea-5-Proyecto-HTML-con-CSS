@@ -35,3 +35,16 @@
  
 
 }
+
+
+@mixin button() {
+  display: inline-block;
+  background-color: #0CA6D9;
+  border-radius: 50px;
+  color: white;
+  padding: 28px 21px;
+  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+  background: linear-gradient(to right, $orange, $blue);
+
+
+}
