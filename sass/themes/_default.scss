@@ -11,27 +11,10 @@ ul {
 
 
 .separetion {
-    background-image: url(../img/baliza.png);
-    height: 21vh;
-    bottom: 82px;
-    position: relative;
-    @include breakpoint(mobile-xl) {
-        bottom: 80px;
-        height: 28vh;
+    img {
+        max-width: 100%;
+        width: 100%;
     }
-}
-.separetion-footer {
-    background-image: url(../img/baliza.png);
-    height: 21vh;
-    bottom: 186px;
-    position: relative;
-    @include breakpoint(largedesktop) {
-        bottom: 227px;
-    }
-    @include breakpoint(tabletvertical) {
-        bottom: 227px;
-    }
-    @include breakpoint(mobile-xl) {
-        bottom: 117px;
-    }
+    background-image: url(../../img/baliza.png);
+    max-width: 100%;
 }

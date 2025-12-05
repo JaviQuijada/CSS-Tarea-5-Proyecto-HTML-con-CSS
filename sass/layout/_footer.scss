@@ -21,10 +21,13 @@
       @include breakpoint(mobile-xl) {
         bottom: 152px;
         display: block;
+        top: 0;
+
       }
       @include breakpoint(mobile) {
         bottom: 152px;
         display: block;
+        top: 0;
       }
 
 

@@ -15,10 +15,11 @@
         background-size: auto;
         height: 44vh;
         background-position: 0% 32%;
-        bottom: 20px;
+        bottom: 0px;
         position: relative;
 
     }
+
     @include breakpoint(mobile) {
       background-size: auto;
       height: 44vh;
@@ -266,37 +267,30 @@
     }
   }
   &-2 {
-    position: relative;
-    bottom: 102px;
+
     background-image: url(../img/Top-Mistral.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 51vh;
-    @include breakpoint(largedesktop) {
-      bottom: 139px;
-    }
+    display: flex;
+    justify-content: space-between;
+
     @include breakpoint(tabletvertical) {
         background-position: 48%;
-        bottom: 139px;
       }
     @include breakpoint(mobile-xl) {
         background-size: initial;
         background-position: 69%;
         height: 72vh;
-        bottom: 312px;
     }  
     @include breakpoint(mobile) {
       background-size: initial;
       background-position: 69%;
       height: 72vh;
-      bottom: 203px;
   } 
     &-title {
       margin: 30px 100px 30px 0px;
       text-align: right;
-      position: absolute;
-      bottom: 0;
-      right: 0;
       width: 26%;
       font-family: $font-primary;
       font-size: 38px;

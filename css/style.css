@@ -32,12 +32,14 @@
   .footer_principal {
     bottom: 152px;
     display: block;
+    top: 0;
   }
 }
 @media (max-width: 376px) and (min-width: 320px) {
   .footer_principal {
     bottom: 152px;
     display: block;
+    top: 0;
   }
 }
 .footer_principal_logo img {
@@ -302,7 +304,7 @@
     background-size: auto;
     height: 44vh;
     background-position: 0% 32%;
-    bottom: 20px;
+    bottom: 0px;
     position: relative;
   }
 }
@@ -672,22 +674,16 @@
   }
 }
 .main_principal-hero-2 {
-  position: relative;
-  bottom: 102px;
   background-image: url(../img/Top-Mistral.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 51vh;
-}
-@media (max-width: 1920px) and (min-width: 1441px) {
-  .main_principal-hero-2 {
-    bottom: 139px;
-  }
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 768px) and (min-width: 414px) {
   .main_principal-hero-2 {
     background-position: 48%;
-    bottom: 139px;
   }
 }
 @media (max-width: 414px) and (min-width: 376px) {
@@ -695,7 +691,6 @@
     background-size: initial;
     background-position: 69%;
     height: 72vh;
-    bottom: 312px;
   }
 }
 @media (max-width: 376px) and (min-width: 320px) {
@@ -703,15 +698,11 @@
     background-size: initial;
     background-position: 69%;
     height: 72vh;
-    bottom: 203px;
   }
 }
 .main_principal-hero-2-title {
   margin: 30px 100px 30px 0px;
   text-align: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   width: 26%;
   font-family: "Oswald", sans-serif;
   font-size: 38px;
@@ -808,22 +799,6 @@ body.principal {
   background-color: #222222;
 }
 
-.main_principal {
-  position: relative;
-  bottom: 104px;
-  height: 141vh;
-}
-@media (max-width: 1920px) and (min-width: 1441px) {
-  .main_principal {
-    bottom: 141px;
-  }
-}
-@media (max-width: 768px) and (min-width: 414px) {
-  .main_principal {
-    bottom: 141px;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -832,39 +807,13 @@ ul {
   list-style: none;
 }
 
+.separetion img {
+  max-width: 100%;
+  width: 100%;
+}
 .separetion {
-  background-image: url(../img/baliza.png);
-  height: 21vh;
-  bottom: 82px;
-  position: relative;
-}
-@media (max-width: 414px) and (min-width: 376px) {
-  .separetion {
-    bottom: 80px;
-    height: 28vh;
-  }
-}
-
-.separetion-footer {
-  background-image: url(../img/baliza.png);
-  height: 21vh;
-  bottom: 186px;
-  position: relative;
-}
-@media (max-width: 1920px) and (min-width: 1441px) {
-  .separetion-footer {
-    bottom: 227px;
-  }
-}
-@media (max-width: 768px) and (min-width: 414px) {
-  .separetion-footer {
-    bottom: 227px;
-  }
-}
-@media (max-width: 414px) and (min-width: 376px) {
-  .separetion-footer {
-    bottom: 117px;
-  }
+  background-image: url(../../img/baliza.png);
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
