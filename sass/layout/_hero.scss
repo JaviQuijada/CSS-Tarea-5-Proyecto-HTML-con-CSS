@@ -1,97 +1,298 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-
 .main_principal-hero {
+  &-1 {
+    background-image: url(../img/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    perspective: 1000px;
+    @include breakpoint(mobile) {
+        background-size: auto;
+        height: 44vh;
+        background-position: 0% 32%;
 
-        &-1 {
-            background-image: url(../img/background2.png) ;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 83vh;
-            display: flex;
-            justify-content: flex-end; 
-            align-items: flex-end;
-            perspective: 1000px;
-            &-container-tv {
-                transform-style: preserve-3d;
-                transform: rotateY(39deg) rotateX(10deg) rotateZ(0deg) skewY(-3deg);
-                transform-origin: center bottom;
-                position: relative;
-                width: 336px;
-                height: 345px;
-                bottom: 288px;
-                right: 192px;
-                &-clases {
-                margin-bottom: 20px;
-                a {
-                    font-family: $font-primary;
-                    color: $orange;
-                    font-size: 33px;
-                    font-weight: 700;
-                }
-            }
-                &-info{
-                margin-bottom: 20px;
-
-                 a {
-                    font-family: $font-segundary;
-                    color: $orange2;
-                    font-size: 28px;
-                }
-            }
-                &-shop {
-                margin-bottom: 20px;
-                a {
-                    font-family: $font-subtitle;
-                    color: $yellow;
-                    font-size: 20px;
-                }
-            }
-                &-contact a {
-                    font-family: $font-title;
-                    color: $white-gray;
-                    font-size: 40px;
-                }
-
-            } 
-            
-            h2 {
-                position: relative;
-                bottom: 0;
-                font-size: 73px;
-                font-family: $font-title;
-            } 
-            &-btn {
-                @include button();
-                margin: 0px 139px 57px 0px; 
-                a {
-                    font-family: $font-segundary;
-                    font-size: 47px;
-                    color: $yellow;
-                }          
-             }
+    }
+    &-container-tv {
+      transform-style: preserve-3d;
+      transform: rotateY(39deg) rotateX(10deg) rotateZ(0deg) skewY(-3deg);
+      transform-origin: center bottom;
+      position: absolute;
+      width: 336px;
+      height: 345px;
+      bottom: 288px;
+      right: 966px;
+      opacity: 65%;
+      @include breakpoint(largedesktop) {
+        width: 410px;
+        height: 450px;
+        bottom: 293px;
+        right: 1322px;
+        transform: rotateY(43deg) rotateX(13deg) rotateZ(0deg) skewY(-2deg);
+      }
+      @include breakpoint(smalldesktop) {
+        width: 328px;
+        height: 345px;
+        bottom: 222px;
+        right: 838px;
+      }
+      @include breakpoint(tablet) {
+        width: 328px;
+        height: 345px;
+        bottom: 202px;
+        right: 596px;
+      }
+      @include breakpoint(tabletvertical) {
+        width: 459px;
+        height: 354px;
+        bottom: 339px;
+        right: 201px;
+        transform: rotateY(28deg) rotateX(8deg) rotateZ(0deg) skewY(-1deg);
+      }
+      @include breakpoint(mobile) {
+        width: 300px;
+        height: 257px;
+        bottom: 0;
+        top: 24px;
+        right: 0;
+        left: 74px;
+        transform: rotateY(35deg) rotateX(11deg) rotateZ(4deg) skewY(-4deg);
+      }
+      &-clases {
+        margin-bottom: 20px;
+        @include breakpoint(tablet) {
+            margin-bottom: 10px;
         }
-        &-2 {
-            position: relative;
-            bottom: 102px;
-            background-image: url(../img/Top-Mistral.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 51vh;
-            h3 {
-                margin: 30px 30px 0px 0px;                position: absolute;
-                right: 0;
-                width: 26%;
-                font-family: $font-primary;
-                font-size: 38px;
-                background: linear-gradient(to right, $orange, $blue);
-                background-clip: text;
-                color: transparent;
-                filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-
-
-            }
+        @include breakpoint(mobile) {
+            margin-bottom: 0;
+        }
+        a {
+          font-family: $font-primary;
+          color: $orange;
+          font-size: 33px;
+          font-weight: 700;
+          @include breakpoint(largedesktop) {
+            font-size: 33px;
+          }
+          @include breakpoint(smalldesktop) {
+            font-size: 30px;
+          }
+          @include breakpoint(mobile) {
+            font-size: 30px;
+          }
 
         }
+      }
+      &-info {
+        margin-bottom: 20px;
+        @include breakpoint(tablet) {
+            margin-bottom: 10px;
+        }
+        @include breakpoint(mobile) {
+            margin-bottom: 0;
+        }
+
+        a {
+          font-family: $font-segundary;
+          color: $orange2;
+          font-size: 28px;
+          @include breakpoint(largedesktop) {
+            font-size: 34px;
+          }
+          @include breakpoint(smalldesktop) {
+            font-size: 26px;
+          }
+          @include breakpoint(tabletvertical) {
+            font-size: 40px;
+          }
+          @include breakpoint(mobile) {
+            font-size: 26px;
+          }
+        }
+      }
+      &-shop {
+        margin-bottom: 20px;
+        @include breakpoint(tablet) {
+            margin-bottom: 10px;
+        }
+        @include breakpoint(mobile) {
+            margin-bottom: 0;
+        }
+        a {
+          font-family: $font-subtitle;
+          color: $yellow;
+          font-size: 20px;
+          @include breakpoint(largedesktop) {
+            font-size: 32px;
+          }
+          @include breakpoint(tabletvertical) {
+            font-size: 30px;
+          }
+          @include breakpoint(mobile) {
+            font-size: 20px;
+          }
+        }
+      }
+      &-contact a {
+        font-family: $font-title;
+        color: $white-gray;
+        font-size: 40px;
+        @include breakpoint(largedesktop) {
+          font-size: 68px;
+        }
+        @include breakpoint(smalldesktop) {
+            font-size: 30px;
+          }
+          @include breakpoint(mobile) {
+            font-size: 30px;
+          }
+      }
+    }
+
+    h2 {
+      position: relative;
+      bottom: 0;
+      font-size: 73px;
+      font-family: $font-title;
+      @include breakpoint(largedesktop) {
+        font-size: 102px;
+      }
+      @include breakpoint(tablet) {
+        font-size: 52px;
+        left: 20px;
+        margin-right: 30px
+      }
+      @include breakpoint(mobile) {
+        font-size: 31px;
+        left: 20px;
+        margin-right: 32px;
+        background-image: linear-gradient(to bottom, #ada9a9, #424040);
+        padding: 5px;
+        border: 3px solid #666;
+        bottom: 10px;
+        border-radius: 13%;
+    }
+    }
+    &-btn {
+      @include button();
+      margin: 0px 139px 57px 0px;
+      @include breakpoint(tablet) {
+        margin-right: 100px;
+        margin-bottom: 15px;
+      }
+      @include breakpoint(tabletvertical) {
+        margin-right: 266px;
+      }
+      @include breakpoint(mobile) {
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-family: $font-segundary;
+        font-size: 47px;
+        color: rgb(80, 72, 72);
+        filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+        @include breakpoint(tablet) {
+            font-size: 15px;
+        }
+        @include breakpoint(mobile) {
+            font-size: 15px;
+            color: black;
+            font-family: $font-title;
+        }
+      }
+    }
+  }
+  &-2 {
+    position: relative;
+    bottom: 102px;
+    background-image: url(../img/Top-Mistral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 51vh;
+    @include breakpoint(largedesktop) {
+      bottom: 139px;
+    }
+    @include breakpoint(tabletvertical) {
+        background-position: 48%;
+        bottom: 139px;
+      }
+    @include breakpoint(mobile) {
+        background-size: initial;
+        background-position: 69%;
+        height: 72vh;
+        bottom: 203px;
+    }  
+    &-title {
+      margin: 30px 100px 30px 0px;
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 26%;
+      font-family: $font-primary;
+      font-size: 38px;
+      font-weight: 300;
+      color: $white-gray;
+      filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+      @include breakpoint(tablet) {
+        font-size: 20px;
+        width: 15%;
+        bottom: 20px;
+      }
+      @include breakpoint(mobile) {
+        font-size: 20px;
+        width: 35%;
+        bottom: 138px;
+        margin-right: 25px;
+      }
+      strong {
+        color: $orange;
+      }
+    }
+    &-galeria {
+      position: relative;
+      top: 20px;
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      width: 30%;
+      margin-left: 50px;
+      border: 10px solid $gray-dark;
+      border-radius: 5%;
+      @include breakpoint(tablet) {
+        width: 40%;
+        height: 65%;
+      }
+      @include breakpoint(tabletvertical) {
+        width: 34%;
+        height: 60%;
+      }
+      @include breakpoint(mobile) {
+        width: 100%;
+        height: 37%;
+        border: 10px dashed #e2c75d;
+        top: 466px;
+        margin: 0;
+
+      }
+
+      img {
+        scroll-snap-align: center;
+        height: 300px;
+        object-fit: cover;
+        border: 3px solid $gray-dark;
+        @include breakpoint(mobile) {
+            border: 3px ridge $gray-dark;
+
+        }
+      }
+    }
+  }
 }

@@ -16,3 +16,15 @@ ul {
     bottom: 82px;
     position: relative;
 }
+.separetion-footer {
+    background-image: url(../img/baliza.png);
+    height: 21vh;
+    bottom: 186px;
+    position: relative;
+    @include breakpoint(largedesktop) {
+        bottom: 227px;
+    }
+    @include breakpoint(tabletvertical) {
+        bottom: 227px;
+    }
+}

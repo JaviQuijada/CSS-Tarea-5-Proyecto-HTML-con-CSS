@@ -23,10 +23,15 @@
     }
   }
    @else if $point == tabletvertical {
-    @media (max-width: 768px) and (min-width: 415px) {
+    @media (max-width: 768px) and (min-width: 413px) {
       @content;
     }
   } 
+ // @else if $point == mobileandrotate {
+ //   @media (max-width: 599px) and (min-width: 413px) {
+ //     @content;
+ //   }
+ // }
   @else if $point == mobile {
     @media (max-width: 414px) and (min-width: 320px) {
       @content;
@@ -38,13 +43,45 @@
 
 
 @mixin button() {
-  display: inline-block;
-  background-color: #0CA6D9;
-  border-radius: 50px;
-  color: white;
-  padding: 28px 21px;
-  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-  background: linear-gradient(to right, $orange, $blue);
+
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  
+    background-image: linear-gradient(to bottom, #e0e0e0, #a0a0a0);
+    color: #333;
+  
+    box-shadow: 0 5px 0 #808080,
+                0 8px 15px rgba(0, 0, 0, 0.3); 
+  
+    transition: all 0.1s ease-in-out;
+
+    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+    @include breakpoint(tablet) {
+      padding: 10px 10px;
+
+    }
+    @include breakpoint(mobile) {
+      padding: 10px 10px;
+      background-image: linear-gradient(to bottom, #ada9a9, #424040);
 
 
-}
+    }
+
+
+    :active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #808080,
+                  0 5px 10px rgba(0, 0, 0, 0.3); 
+    }
+  }
+  
+
+  

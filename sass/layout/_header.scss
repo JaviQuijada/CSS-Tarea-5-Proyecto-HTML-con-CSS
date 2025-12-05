@@ -6,23 +6,53 @@
         background-image: url(../img/background-body.png);
         position: relative;
 
+
     &_contenedor {
         margin: 0px 100px 0px 100px;
         padding: 30px;
+        @include breakpoint(mobile) {
+            margin: 0px 10px 0px 10px;
+            display: block;
+
+        }
         &-nav {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            @include breakpoint(mobile) {
+                display: block;
+
+            }
             &-index {
                 display: flex;
                 justify-content: space-between;
+  
                 a {
                     font-size: 32px;
                     color: $blue;
                     filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+                    @include breakpoint(largedesktop) {
+                        font-size: 42px;
+                    }
+                    @include breakpoint(tablet) {
+                        font-size: 20px;
+                      }
+                      @include breakpoint(tabletvertical) {
+                        font-size: 16px;
+                      }
+                      @include breakpoint(mobile) {
+                        font-size: 12px;
+                      }
+
                 }
             }
             &-logo {
                 position: relative;
+                @include breakpoint(largedesktop) {
+                    right: 100px;
+                }
+                @include breakpoint(tablet) {
+                    right: 100px;
+                  }
 
                 img {
                     position: relative;
@@ -38,9 +68,23 @@
                 font-family: "Road Rage", sans-serif;
                 font-weight: 300;
                 max-width: 100%;
-                margin-top: 48px;
+                margin-top: 123px;
                 filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+                @include breakpoint(largedesktop) {
+                    font-size: 145px;
+                }
+                @include breakpoint(tablet) {
+                    font-size: 70px;
+                  }
+                @include breakpoint(tabletvertical) {
+                    margin-top: 50px;
+                }
+                @include breakpoint(mobile) {
+                    font-size: 100px;
+                    text-align: center;
+                    margin: 0;
 
+                }
             }
         }
     }

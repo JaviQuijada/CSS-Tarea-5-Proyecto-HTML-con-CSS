@@ -5,5 +5,12 @@
 .main_principal {
     position: relative;
     bottom: 104px;
+    height: 141vh;
+    @include breakpoint(largedesktop) {
+        bottom: 141px;
+    }
+    @include breakpoint(tabletvertical) {
+        bottom: 141px;
+    }
 
 }
