@@ -8,32 +8,32 @@
     }
   }
   @if $point == desktop {
-    @media (max-width: 1440px) and (min-width: 1281px) {
+    @media (max-width: 1440px) and (min-width: 1288px) {
       @content;
     }
   }
   @if $point == smalldesktop {
-    @media (max-width: 1280px) and (min-width: 1025px) {
+    @media (max-width: 1280px) and (min-width: 1024px) {
       @content;
     }
   }  
   @else if $point == tablet {
-    @media (max-width: 1024px) and (min-width: 767px) {
+    @media (max-width: 1024px) and (min-width: 768px) {
       @content;
     }
   }
    @else if $point == tabletvertical {
-    @media (max-width: 768px) and (min-width: 413px) {
+    @media (max-width: 768px) and (min-width: 414px) {
       @content;
     }
   } 
- // @else if $point == mobileandrotate {
- //   @media (max-width: 599px) and (min-width: 413px) {
- //     @content;
- //   }
- // }
+  @else if $point == mobile-xl {
+    @media (max-width: 414px) and (min-width: 376px) {
+      @content;
+    }
+  }
   @else if $point == mobile {
-    @media (max-width: 414px) and (min-width: 320px) {
+    @media (max-width: 376px) and (min-width: 320px) {
       @content;
     }
   }
@@ -66,6 +66,12 @@
     filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
     @include breakpoint(tablet) {
       padding: 10px 10px;
+
+    }
+    @include breakpoint(mobile-xl) {
+      padding: 10px 10px;
+      background-image: linear-gradient(to bottom, #ada9a9, #424040);
+
 
     }
     @include breakpoint(mobile) {

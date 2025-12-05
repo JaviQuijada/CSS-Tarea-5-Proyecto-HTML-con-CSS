@@ -10,17 +10,24 @@
     &_contenedor {
         margin: 0px 100px 0px 100px;
         padding: 30px;
+        @include breakpoint(mobile-xl) {
+            margin: 0px 10px 0px 10px;
+            display: block;
+        }
         @include breakpoint(mobile) {
             margin: 0px 10px 0px 10px;
             display: block;
-
         }
         &-nav {
             display: grid;
             grid-template-columns: 2fr 1fr;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            @include breakpoint(mobile-xl) {
+                display: block;
+            }
             @include breakpoint(mobile) {
                 display: block;
-
             }
             &-index {
                 display: flex;
@@ -38,6 +45,9 @@
                       }
                       @include breakpoint(tabletvertical) {
                         font-size: 16px;
+                      }
+                      @include breakpoint(mobile-xl) {
+                        font-size: 12px;
                       }
                       @include breakpoint(mobile) {
                         font-size: 12px;
@@ -78,6 +88,12 @@
                   }
                 @include breakpoint(tabletvertical) {
                     margin-top: 50px;
+                }
+                @include breakpoint(mobile-xl) {
+                    font-size: 100px;
+                    text-align: center;
+                    margin: 0;
+
                 }
                 @include breakpoint(mobile) {
                     font-size: 100px;

@@ -18,16 +18,24 @@
       @include breakpoint(tablet) {
         bottom: 47px;
       }
+      @include breakpoint(mobile-xl) {
+        bottom: 152px;
+        display: block;
+      }
       @include breakpoint(mobile) {
         bottom: 152px;
         display: block;
       }
+
 
     &_logo {
         img {
             width: 30%;
             @include breakpoint(tabletvertical) {
                 width: 50%;
+            }
+            @include breakpoint(mobile-xl) {
+                width: 100%;
             }
             @include breakpoint(mobile) {
                 width: 100%;
@@ -46,6 +54,13 @@
             margin-bottom: 30px;
             align-items: flex-end;
 
+        }
+        @include breakpoint(mobile-xl) {
+            display: flex;
+            flex-direction: row;
+            margin: 0px 20px 0px 20px;
+            max-width: 100%;
+            width: 90%;        
         }
         @include breakpoint(mobile) {
             display: flex;
@@ -74,6 +89,10 @@
                 width: 40%;
                 margin-top: 20px;
             }
+            @include breakpoint(mobile-xl) {
+                width: 32%;
+                font-size: 18px;
+            }
             @include breakpoint(mobile) {
                 width: 32%;
                 font-size: 18px;
@@ -86,6 +105,13 @@
             }
             @include breakpoint(tabletvertical) {
                 font-size: 20px;
+            }
+            @include breakpoint(mobile-xl) {
+                font-size: 20px;
+                margin-left: 62px;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-bottom: 20px;
             }
             @include breakpoint(mobile) {
                 font-size: 20px;
