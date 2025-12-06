@@ -105,3 +105,32 @@
         }
     }
 }
+
+//////////////////////////////////////////////////////////
+/// FIN DE PAGINA PRINCIPLAL//////////////////////
+
+
+
+.header-general{
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+        width: 50%;
+        img {
+            width: 25%;
+            margin-left: 30px;        }
+    }
+    &-nav {
+        position: absolute;
+        margin: 67px 0px 0px 219px;
+        &-index {
+            display: flex;
+            gap: 115px;
+            a {
+                font-size: 32px;
+                color: #0CA6D9;
+                filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));        }
+        }
+    }
+
+}
