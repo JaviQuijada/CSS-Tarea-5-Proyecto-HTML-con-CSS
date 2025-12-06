@@ -26,8 +26,9 @@
         width: 47%;
       }
       @include breakpoint(mobile) {
-        margin-top: 327px;
-        width: 47%;      }
+        margin-top: 273px;
+        width: 47%;      
+      }
     }
   }
   &-aviso {
