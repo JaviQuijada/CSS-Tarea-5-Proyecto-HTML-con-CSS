@@ -3,6 +3,7 @@
 
 .main_principal-hero {
   &-1 {
+    position: relative;
     background-image: url(../img/background2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +25,7 @@
       height: 59vh;
     }
     &-container-tv {
+      position: relative;
       transform-style: preserve-3d;
       transform: rotateY(39deg) rotateX(10deg) rotateZ(0deg) skewY(-3deg);
       transform-origin: center bottom;
@@ -64,6 +66,7 @@
         height: 257px;
         left: 74px;
         bottom: 191px;
+        transform: rotateY(36deg) rotateX(8deg) rotateZ(1deg) skewY(-2deg);
 
       }
       @include breakpoint(mobile) {
@@ -71,7 +74,7 @@
         height: 257px;
         left: 74px;
         bottom: 158px;
-        transform: rotateY(28deg) rotateX(8deg) rotateZ(0deg) skewY(-1deg);
+        transform: rotateY(36deg) rotateX(8deg) rotateZ(1deg) skewY(-2deg);
 
       }
       &-clases {
@@ -265,6 +268,7 @@
     height: 51vh;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     @include breakpoint(tabletvertical) {
       background-position: 48%;
@@ -308,9 +312,12 @@
         margin: 140px 30px 0px 161px;
       }
       @include breakpoint(mobile) {
-        font-size: 24px;
-        width: 62%;
-        margin: 140px 30px 0px 161px;
+        font-size: 22px;
+        width: 48%;
+        margin: 0px 19px 30px 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
       strong {
         color: $orange;
@@ -336,17 +343,17 @@
       }
       @include breakpoint(mobile-xl) {
         width: 100%;
-        height: 49%;
+        height: 100%;
         border: 10px ridge #e2c75d;
-        top: 1738px;
+        top: 406px;
         margin: 0;
         position: absolute;
       }
       @include breakpoint(mobile) {
         width: 100%;
-        height: 49%;
+        height: 100%;
         border: 10px ridge #e2c75d;
-        top: 1608px;
+        top: 366px;
         margin: 0;
         position: absolute;
       }

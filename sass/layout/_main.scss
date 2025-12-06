@@ -1,2 +1,90 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.main-general {
+    margin:0px 50px 0px 50px;
+
+    h1 {
+        font-family: $font-title;
+        color: $orange;
+        filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+    }
+    h2 {
+        font-family: $font-segundary;
+        color: $yellow;
+        filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+    }
+    h3 {
+        font-family: $font-primary;
+        color: $orange2;
+        filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+    }
+    p {
+        font-family: $font-subtitle;
+        color: $white-gray;
+        filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+        background-color: rgb(34, 34, 34, 0.5);
+    }
+}
+
+
+img.grupo{
+    max-width: 100%;
+    border: 10px ridge #e2c75d;
+
+}
+.presentacion {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        max-width: 36%;
+        font-size: 86px;
+        font-weight: 900;
+        background-color: rgb(34, 34, 34, 0.2);
+
+
+    }
+    p {
+        max-width: 50%;
+        font-size: 36px;
+        margin: 40px 0px 40px 0px;
+
+        
+
+    }
+}
+
+h2.equipo-title {
+    font-size: 50px ;
+    font-weight: 900;
+    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+
+    background-color: rgb(34, 34, 34, 0.2);
+
+}
+p.aprende {
+    font-size: 35px;
+    margin-bottom: 50px;
+
+    span {
+        color: $orange;
+    }
+    
+}
+.equipo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 20px 40px;
+    h3 {
+        max-width: 36%;
+        font-size: 55px;
+        font-weight: 900;
+        background-color: rgb(34, 34, 34, 0.2);
+     }
+    img {
+        height: 214px;
+        border-radius: 27%    
+    }
+
+
+}

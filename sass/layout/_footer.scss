@@ -22,11 +22,11 @@
         width: 50%;
       }
       @include breakpoint(mobile-xl) {
-        margin-top: 432px;
+        margin-top: 365px;
         width: 47%;
       }
       @include breakpoint(mobile) {
-        margin-top: 432px;
+        margin-top: 327px;
         width: 47%;      }
     }
   }
@@ -86,8 +86,8 @@
       }
       @include breakpoint(mobile) {
         padding: 0;
-        width: 100%;
-        font-size: 18px;
+        width: 54%;
+        font-size: 12px;
       }
     }
     span {
@@ -103,7 +103,7 @@
         margin: 0;
       }
       @include breakpoint(mobile) {
-        font-size: 14px;
+        font-size: 13px;
         margin: 0;
       }
     }

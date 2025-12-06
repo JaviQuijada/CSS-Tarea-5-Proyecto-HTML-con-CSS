@@ -18,17 +18,17 @@
     }
   }  
   @else if $point == tablet {
-    @media (max-width: 1024px) and (min-width: 768px) {
+    @media (max-width: 1024px) and (min-width: 766px) {
       @content;
     }
   }
    @else if $point == tabletvertical {
-    @media (max-width: 768px) and (min-width: 414px) {
+    @media (max-width: 767px) and (min-width: 4481px) {
       @content;
     }
   } 
   @else if $point == mobile-xl {
-    @media (max-width: 414px) and (min-width: 376px) {
+    @media (max-width: 480px) and (min-width: 377px) {
       @content;
     }
   }
