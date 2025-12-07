@@ -29,7 +29,7 @@
     font-family: $font-subtitle;
     color: $white-gray;
     filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-    background-color: rgb(34, 34, 34, 0.5);
+    background-color: rgb(34, 34, 34, 0.2);
   }
 }
 
@@ -40,16 +40,31 @@ img.grupo {
 .presentacion {
   display: flex;
   justify-content: space-between;
+  @include breakpoint(mobile) {
+    flex-direction: column;
+  }
   h1 {
     max-width: 36%;
     font-size: 86px;
     font-weight: 900;
-    background-color: rgb(34, 34, 34, 0.2);
+    filter: drop-shadow(-1px 14px 4px rgb(0, 0, 0));
+    @include breakpoint(mobile) {
+      text-align: center;
+      font-size: 43px;
+      max-width: 100%;
+      width: 100%;
+    }
   }
   p {
     max-width: 50%;
     font-size: 36px;
     margin: 40px 0px 40px 0px;
+    @include breakpoint(mobile) {
+      text-align: center;
+      font-size: 20px;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -57,8 +72,10 @@ h2.equipo-title {
   font-size: 50px;
   font-weight: 900;
   filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-
   background-color: rgb(34, 34, 34, 0.2);
+  @include breakpoint(mobile) {
+    font-size: 30px;
+  }
 }
 p.aprende {
   font-size: 35px;
@@ -72,15 +89,26 @@ p.aprende {
   display: flex;
   justify-content: space-between;
   margin: 20px 40px 20px 40px;
+  @include breakpoint(mobile) {
+    margin: 0;
+    max-width: 100%;
+  }
   h3 {
     max-width: 36%;
     font-size: 55px;
     font-weight: 900;
     background-color: rgb(34, 34, 34, 0.2);
+    @include breakpoint(mobile) {
+      font-size: 20px
+    };
   }
   img {
     height: 214px;
     border-radius: 27%;
+    @include breakpoint(mobile) {
+      width: 54%;
+      height: auto;
+    }
   }
 }
 
