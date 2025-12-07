@@ -8,12 +8,12 @@
     }
   }
   @if $point == desktop {
-    @media (max-width: 1440px) and (min-width: 1281px) {
+    @media (max-width: 1440px) and (min-width: 1365px) {
       @content;
     }
   }
   @if $point == smalldesktop {
-    @media (max-width: 1280px) and (min-width: 1025px) {
+    @media (max-width: 1366px) and (min-width: 1025px) {
       @content;
     }
   }  
@@ -23,17 +23,17 @@
     }
   }
    @else if $point == tabletvertical {
-    @media (max-width: 820px) and (min-width: 481px) {
+    @media (max-width: 820px) and (min-width: 415px) {
       @content;
     }
   } 
   @else if $point == mobile-xl {
-    @media (max-width: 480px) and (min-width: 376px) {
+    @media (max-width: 414px) and (min-width: 376px) {
       @content;
     }
   }
   @else if $point == mobile {
-    @media (max-width: 376px) and (min-width: 320px) {
+    @media (max-width: 375px) and (min-width: 320px) {
       @content;
     }
   }
