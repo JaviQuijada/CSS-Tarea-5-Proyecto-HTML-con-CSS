@@ -12,7 +12,12 @@
     justify-content: flex-end;
     align-items: flex-end;
     perspective: 1000px;
+    @include breakpoint(tabletvertical) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     @include breakpoint(mobile-xl) {
+      flex-direction: column;
       background-size: auto;
       background-position: 0% 32%;
       height: 59vh;
@@ -20,60 +25,47 @@
     }
 
     @include breakpoint(mobile) {
+      flex-direction: column;
       background-size: auto;
       background-position: 0% 32%;
       height: 59vh;
     }
     &-container-tv {
-      position: relative;
-      transform-style: preserve-3d;
-      transform: rotateY(39deg) rotateX(10deg) rotateZ(0deg) skewY(-3deg);
-      transform-origin: center bottom;
-      position: absolute;
-      width: 336px;
-      height: 345px;
-      bottom: 288px;
-      right: 966px;
-      opacity: 65%;
-      @include breakpoint(largedesktop) {
+    transform: rotateY(39deg) rotateX(10deg) rotateZ(0deg) skewY(-3deg);
+    width: 24%;
+    opacity: 65%;
+    position: relative;
+    inset: -298px -184px;
+
+        @include breakpoint(largedesktop) {
         width: 410px;
-        height: 450px;
-        bottom: 293px;
-        right: 1322px;
+        inset: -314px -334px;
         transform: rotateY(43deg) rotateX(13deg) rotateZ(0deg) skewY(-2deg);
       }
       @include breakpoint(smalldesktop) {
-        width: 328px;
-        height: 345px;
-        bottom: 222px;
-        right: 838px;
+        inset: -256px -178px;
       }
-      @include breakpoint(tablet) {
-        width: 328px;
-        height: 345px;
-        bottom: 202px;
-        right: 596px;
-      }
+        @include breakpoint(tablet) {
+          width: 329px;
+          inset: -240px -101px;
+        }
       @include breakpoint(tabletvertical) {
-        width: 459px;
-        height: 354px;
-        bottom: 339px;
-        right: 201px;
-        transform: rotateY(28deg) rotateX(8deg) rotateZ(0deg) skewY(-1deg);
+        width: 69%;
+        inset: -107px 94px;
+        transform: rotateY(32deg) rotateX(13deg) rotateZ(0deg) skewY(-2deg);
+    
       }
       @include breakpoint(mobile-xl) {
-        width: 300px;
+        width: 77%;
         height: 257px;
-        left: 74px;
-        bottom: 191px;
+        inset: -76px -49px; 
         transform: rotateY(36deg) rotateX(8deg) rotateZ(1deg) skewY(-2deg);
 
       }
       @include breakpoint(mobile) {
-        width: 300px;
+        width: 90%;
         height: 257px;
-        left: 74px;
-        bottom: 119px;
+        inset: -68px 7px; 
         transform: rotateY(36deg) rotateX(8deg) rotateZ(1deg) skewY(-2deg);
 
       }
@@ -200,8 +192,14 @@
         font-size: 52px;
         margin: 0px 10px 19px 0px;
       }
+      @include breakpoint(tabletvertical) {
+        font-size: 71px;
+        inset: 94px 98px;
+        position: relative;
+      }
       @include breakpoint(mobile-xl) {
-        margin: 0px 13px 9px 0px;
+        position: relative;
+        inset: 81px -119px;        
         font-size: 31px;
         background-image: linear-gradient(to bottom, #ada9a9, #424040);
         padding: 5px;
@@ -209,7 +207,8 @@
         border-radius: 13%;
       }
       @include breakpoint(mobile) {
-        margin: 0px 13px 9px 0px;
+        position: relative;
+        inset: 81px -119px;        
         font-size: 31px;
         background-image: linear-gradient(to bottom, #ada9a9, #424040);
         padding: 5px;
@@ -227,7 +226,8 @@
         margin: 0px 101px 28px 0px;
       }
       @include breakpoint(tabletvertical) {
-        margin-right: 266px;
+        inset: -11px 611px;
+        position: relative;      
       }
       @include breakpoint(mobile-xl) {
         margin-right: 70px;
@@ -247,12 +247,12 @@
           font-size: 15px;
         }
         @include breakpoint(mobile-xl) {
-          font-size: 15px;
+          font-size: 28px;
           color: black;
           font-family: $font-title;
         }
         @include breakpoint(mobile) {
-          font-size: 15px;
+          font-size: 28px;
           color: black;
           font-family: $font-title;
         }
@@ -306,6 +306,11 @@
         margin: 152px 40px 30px 0px;
         width: 25%;
       }
+      @include breakpoint(tabletvertical) {
+        font-size: 29px;
+        margin: 196px 40px 30px 0px;
+        width: 25%;
+      }
       @include breakpoint(mobile-xl) {
         font-size: 29px;
         width: 62%;
@@ -324,14 +329,13 @@
       }
     }
     &-galeria {
-      position: relative;
       display: flex;
       overflow-x: scroll;
       overflow-y: hidden;
       scroll-snap-type: x mandatory;
-      width: 30%;
+      width: 38%;
       margin-left: 50px;
-      border: 10px solid $gray-dark;
+      border: 10px solid #222222;
       border-radius: 5%;
       @include breakpoint(tablet) {
         width: 46%;
@@ -353,7 +357,7 @@
         width: 100%;
         height: 100%;
         border: 10px ridge #e2c75d;
-        top: 323px;
+        top: 430px;
         margin: 0;
         position: absolute;
       }
