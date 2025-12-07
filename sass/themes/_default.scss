@@ -18,3 +18,22 @@ ul {
     background-image: url(../../img/baliza.png);
     max-width: 100%;
 }
+h1 {
+    font-family: $font-title;
+    color: $orange;
+}
+
+h2, h3 {
+    font-family: $font-primary;
+    color: $orange2;
+}
+
+p {
+    font-family: $font-subtitle;
+    color: $white-gray;    
+}
+
+a {
+    font-family: $font-segundary;
+    color: $yellow;
+}
