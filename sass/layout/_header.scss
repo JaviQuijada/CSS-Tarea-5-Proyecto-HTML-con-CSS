@@ -47,13 +47,13 @@
                       @include breakpoint(tabletvertical) {
                         font-size: 16px;
                       }
-                      @include breakpoint(mobile-xl) {
-                        font-size: 12px;
-                      }
                       @include breakpoint(mobile) {
                         font-size: 12px;
                       }
-
+                      @include breakpoint(mobile-xl) {
+                        font-size: 12px;
+                        }
+ 
                 }
             }
             &-logo {
@@ -123,6 +123,11 @@
         flex-direction: column-reverse;  
         margin: 0;  
     }
+    @include breakpoint(mobile-xl) {
+        display: flex;
+        flex-direction: column-reverse;  
+        margin: 0;  
+    }
 
     &-logo {
         width: 50%;
@@ -136,6 +141,10 @@
                 margin: 0;
 
             }
+            @include breakpoint(mobile-xl) {
+                margin: 0;
+
+            }
 
 
         }
@@ -144,6 +153,9 @@
         display: flex;
         justify-content: space-between;
         @include breakpoint(mobile) {
+            width: 100%;
+        }
+        @include breakpoint(mobile-xl) {
             width: 100%;
         }
 
@@ -157,6 +169,12 @@
                 margin: 0;
                 justify-content: space-around;
             }
+            @include breakpoint(mobile-xl) {
+                width: 100%;
+                gap: 0;
+                margin: 0;
+                justify-content: space-around;
+            }
 
             a {
                 font-size: 32px;
@@ -165,6 +183,10 @@
                 font-weight: 700;
                 filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
                 @include breakpoint(mobile) {
+                    font-size: 12px;
+
+                }
+                @include breakpoint(mobile-xl) {
                     font-size: 12px;
 
                 }

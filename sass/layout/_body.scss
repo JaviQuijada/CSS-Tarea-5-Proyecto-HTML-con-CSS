@@ -11,4 +11,9 @@ body.general {
         margin: 0px 0px 0px 0px;
 
     }
+    background-image: url(../img/background-body.png);
+    @include breakpoint(mobile-xl) {
+        margin: 0px 0px 0px 0px;
+
+    }
 }
