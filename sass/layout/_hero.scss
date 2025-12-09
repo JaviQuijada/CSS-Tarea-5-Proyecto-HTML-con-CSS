@@ -58,14 +58,14 @@
       @include breakpoint(mobile-xl) {
         width: 77%;
         height: 257px;
-        inset: 17px -46px;      
+        inset: 0px -46px;      
         transform: rotateY(36deg) rotateX(8deg) rotateZ(1deg) skewY(-2deg);
 
       }
       @include breakpoint(mobile) {
         width: 90%;
         height: 257px;
-        inset: -7px 7px;
+        inset: 38px 7px;
  
         transform: rotateY(36deg) rotateX(8deg) rotateZ(1deg) skewY(-2deg);
 
@@ -383,7 +383,7 @@
         width: 100%;
         height: 100%;
         border: 10px ridge #e2c75d;
-        top: 362px;
+        top: 305px;
         margin: 0;
         position: absolute;
       }

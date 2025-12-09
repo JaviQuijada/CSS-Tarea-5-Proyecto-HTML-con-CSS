@@ -9,10 +9,6 @@
   @include breakpoint(mobile-xl) {
     margin: 0;
   }
-
-
-
-
 }
 
 img.grupo {
@@ -26,6 +22,9 @@ img.grupo {
     flex-direction: column;
   }
   @include breakpoint(mobile-xl) {
+    flex-direction: column;
+  }
+  @include breakpoint(tabletvertical) {
     flex-direction: column;
   }
   h1 {
@@ -45,6 +44,11 @@ img.grupo {
       max-width: 100%;
       width: 100%;
     }
+    @include breakpoint(tabletvertical) {
+      max-width: 100%;
+      font-size: 50px;
+      text-align: center;
+    }
   }
   p {
     max-width: 50%;
@@ -62,14 +66,20 @@ img.grupo {
       max-width: 100%;
       width: 100%;
     }
+    @include breakpoint(tabletvertical) {
+      max-width: 100%;
+      font-size: 26px;
+    }
   }
 }
 
 h2.equipo-title {
   font-size: 50px;
   font-weight: 900;
+  text-align: center;
   filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
   background-color: rgb(34, 34, 34, 0.2);
+  text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px -1px 0 #000, 2px -2px 0 #000;
   @include breakpoint(mobile) {
     font-size: 30px;
   }
@@ -78,7 +88,8 @@ h2.equipo-title {
   }
 }
 p.aprende {
-  font-size: 35px;
+  font-size: 24px;
+  text-align: center;
   margin-bottom: 50px;
 
   span {
@@ -100,9 +111,10 @@ p.aprende {
   article {
     display: flex;
     align-items: center;
-    flex-direction: column;  }
+    flex-direction: column;
+  }
   h3 {
-    max-width: 36%;
+    color: $yellow;
     font-size: 55px;
     font-weight: 900;
     background-color: rgb(34, 34, 34, 0.2);
@@ -111,6 +123,9 @@ p.aprende {
     }
     @include breakpoint(mobile-xl) {
       font-size: 20px;
+    }
+    @include breakpoint(tabletvertical) {
+      font-size: 26px;
     }
   }
   img {
@@ -124,6 +139,9 @@ p.aprende {
       width: 100%;
       height: 100%;
     }
+    @include breakpoint(tabletvertical) {
+      padding: 10px;
+    }
   }
 }
 
@@ -132,20 +150,23 @@ p.aprende {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 139vh;
+  height: 132vh;
   border: 10px ridge #e2c75d;
   @include breakpoint(mobile) {
     background-size: auto;
     background-position: 39% 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
   }
   @include breakpoint(mobile-xl) {
     background-size: auto;
     background-position: 39% 0%;
     display: grid;
   }
+  @include breakpoint(tabletvertical) {
+    background-position: 39% 0%;
+
+  }
+
 
   &_precios {
     display: flex;
@@ -155,14 +176,26 @@ p.aprende {
     @include breakpoint(mobile-xl) {
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 48px;
     }
     @include breakpoint(mobile) {
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 48px;
     }
     &-tarifas {
       display: grid;
       grid-template-columns: 1fr;
+      @include breakpoint(tabletvertical) {
+        position: relative;
+        top: 622px;
+        left: 199px;
+      }
+      @include breakpoint(smalldesktop) {
+        position: relative;
+        top: 305px;
+        left: 839px;
+      }
 
       li {
         display: flex;
@@ -171,20 +204,18 @@ p.aprende {
       }
       h3 {
         font-size: 21px;
-        background-color: rgb(34, 34, 34, 0.2);
-        text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
-          2px -2px 0 #000;
+        text-shadow: 2px -2px 0 #000;
       }
       h4 {
         font-size: 24px;
-        background-color: rgb(34, 34, 34, 0.2);
-        text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
-          2px -2px 0 #000;
+        color: $blue;
+        text-shadow: 2px -2px 0 #000;
       }
     }
   }
   h1 {
     font-size: 77px;
+    text-shadow: 2px -2px 0 #000;
     font-weight: 900;
     max-width: 38%;
     text-align: right;
@@ -208,6 +239,9 @@ p.aprende {
         2px -2px 0 #000;
       background-color: rgb(34, 34, 34, 0.2);
     }
+    @include breakpoint(tabletvertical) {
+      padding: 30px;
+    }
   }
   p {
     font-size: 35px;
@@ -216,23 +250,56 @@ p.aprende {
     text-align: center;
     bottom: 159px;
     position: relative;
+    @include breakpoint(tabletvertical) {
+      padding: 26px;
+      top: 0;
+      left: 324px;
+      font-size: 27px;
+      width: 51%;
+    }
+    @include breakpoint(smalldesktop) {
+      width: 30%;
+      left: 738px;
+    }
   }
 }
 
-.tabla {
-  background-color: $white-gray;
-  table {
-    width: 100%;
-  }
-}
 .tabla {
   overflow-x: auto;
+
+  h3 {
+    width: 100%;
+    margin-left: 20px;
+    color: $blue;
+    text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000;
+  }
+  table {
+    background-image: url(../img/road.jpg);
+    width: 100%;
+    border-collapse: collapse;
+    border: 6px double $yellow;
+  }
+  table th,
+  table td {
+    border: 2px dashed yellow;
+    padding: 8px;
+    text-align: center;
+  }
+  td:nth-child(1) b {
+    color: $orange;
+    text-shadow: 2px -2px 0 #000;
+  }
+  th:not(:first-child) {
+    color: $blue;
+    text-shadow: 2px -2px 0 #000;
+  }
+  td:not(:first-child) {
+    color: $white-gray;
+    text-shadow: 2px -2px 0 #000;
+  }
 }
 
-.tabla table {
-  width: 100%;
-  border-collapse: collapse;
-}
 .seleccion {
   display: flex;
   flex-direction: column;
@@ -245,26 +312,36 @@ p.aprende {
   align-items: center;
   &-text {
     text-align: center;
-    text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+    text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000;
   }
   &-img {
     border: 10px ridge #e2c75d;
-
   }
   &-subtitle {
     position: relative;
     width: 63%;
-    color: #0CA6D9;
+    color: #0ca6d9;
     font-family: "Road Rage", sans-serif;
     font-size: 16px;
     text-align: center;
     padding: 20px;
-    
+    text-shadow: 2px -2px 0 #000;
+
+    @include breakpoint(tabletvertical) {
+      font-size: 26px;
+      width: 100%;
+    }
+    @include breakpoint(smalldesktop) {
+      font-size: 26px;
+      width: 100%;
+    }
   }
 }
-  .registro {
+.registro {
+  @include breakpoint(smalldesktop) {
+    display: flex;
+  }
   &-info {
-
     &-title {
       color: #d9451c;
       text-align: center;
@@ -274,43 +351,48 @@ p.aprende {
       max-width: 100%;
       filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
       text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
-      2px -2px 0 #000;
-
+        2px -2px 0 #000;
     }
     &-subtitle {
       color: $yellow;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
-      2px -2px 0 #000;
+        2px -2px 0 #000;
     }
     img {
       width: 100%;
+      @include breakpoint(smalldesktop) {
+        width: 100%;
+      }
     }
   }
   &-formulario {
     display: flex;
     justify-content: space-around;
+    @include breakpoint(smalldesktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     p {
       margin-bottom: 20px;
     }
-    
   }
-
 }
 
 .registro-formulario label {
-  color: $yellow; 
+  color: $white-gray;
   text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
-  2px -2px 0 #000;             
+    2px -2px 0 #000;
 }
 
 .registro-formulario input,
 .registro-formulario textarea {
-  background-color: grey;      
-  color: black; 
-  text-shadow: 2px 2px 0 $blue, -2px 2px 0 $blue, -2px -2px 0 $blue,
-  2px -2px 0 $blue;            
+  background-image: url(../img/road.jpg);
+  background-position: 0% -6%;
+  color: $yellow;
+  font-family: $font-title;
+
   border: 1px solid #ccc;
   padding: 5px;
 }
@@ -318,7 +400,13 @@ p.aprende {
 .main-login {
   margin: 0px 20px 0px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include breakpoint(tabletvertical) {
+    display: flex;
+  }
+  @include breakpoint(smalldesktop) {
+    display: flex;
+    gap: 100px;
+  }
 
   h1 {
     color: $orange;
@@ -329,7 +417,98 @@ p.aprende {
     max-width: 100%;
     filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
     text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
-    2px -2px 0 #000;
+      2px -2px 0 #000;
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 10px;
 
+    
+  }
+
+  img {
+    width: 100%;
+    @include breakpoint(tabletvertical) {
+      width: 50%;
+    }
+    @include breakpoint(smalldesktop) {
+      width: 50%;
+    }
+  }
+}
+
+label {
+  color: $white-gray;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea { 
+  display: flex;
+  background-image: url(../img/road.jpg);
+  background-position: 0% -6%;
+  color: $yellow;
+  padding: 6px;
+  margin: 0px 20px 0px 20px;
+}
+
+.btn {
+  @include button();
+  margin-right: 40px;
+}
+
+.contacto-formulario {
+  margin: 0px 20px 40px 20px;
+  @include breakpoint(smalldesktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  }
+  
+
+
+.seleccion {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+
+  article {
+    margin-bottom: 30px;
+    display: grid;
+    justify-items: center;
+
+    img {
+      width: 100%;
+    }
+    p {
+      @include button();
+    }
+  }
+}
+.mapa-contenedor {
+  max-width: 100%;
+  margin: 0px 20px 0px 20px;
+}
+.mapa {
+  width: 100%;
+}
+.contacto {
+  margin: 0px 20px 0px 20px;
+  h1,
+  figure,
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.parrafo-contacto {
+  @include breakpoint(smalldesktop) {
+    font-size: 30px;
   }
 }

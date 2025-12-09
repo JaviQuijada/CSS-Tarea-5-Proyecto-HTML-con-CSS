@@ -28,7 +28,7 @@
         width: 47%;
       }
       @include breakpoint(mobile) {
-        margin-top: 321px;
+        margin-top: 261px;
         width: 47%;      
       }
     }
@@ -111,5 +111,17 @@
         margin: 0;
       }
     }
+  }
+}
+
+.footer-general {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0px 30px;
+
+    &-logo {
+    width: 20%;
   }
 }
