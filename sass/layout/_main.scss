@@ -191,6 +191,11 @@ p.aprende {
         top: 622px;
         left: 199px;
       }
+      @include breakpoint(tablet) {
+        position: relative;
+        top: 305px;
+        left: 575px;
+      }
       @include breakpoint(smalldesktop) {
         position: relative;
         top: 305px;
@@ -242,6 +247,12 @@ p.aprende {
     @include breakpoint(tabletvertical) {
       padding: 30px;
     }
+    @include breakpoint(tablet) {
+      font-size: 50px;
+      max-width: 59%;
+      margin-bottom: 206px;
+      margin-top: 43px;
+  }
   }
   p {
     font-size: 35px;
@@ -256,6 +267,10 @@ p.aprende {
       left: 324px;
       font-size: 27px;
       width: 51%;
+    }
+    @include breakpoint(tablet) {
+      width: 30%;
+      left: 586px;
     }
     @include breakpoint(smalldesktop) {
       width: 30%;
@@ -400,6 +415,8 @@ p.aprende {
 .main-login {
   margin: 0px 20px 0px 20px;
   display: grid;
+  justify-items: center;
+
   @include breakpoint(tabletvertical) {
     display: flex;
   }
@@ -428,7 +445,7 @@ p.aprende {
   }
 
   img {
-    width: 100%;
+    width: 35%;
     @include breakpoint(tabletvertical) {
       width: 50%;
     }

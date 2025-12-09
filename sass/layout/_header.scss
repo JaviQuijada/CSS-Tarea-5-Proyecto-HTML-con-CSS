@@ -118,6 +118,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint(tablet) {
+        margin: 0px 75px 0px 0px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
     @include breakpoint(mobile) {
         display: flex;
         flex-direction: column-reverse;  
@@ -136,6 +143,9 @@
 
     &-logo {
         width: 50%;
+        @include breakpoint(tablet)  {
+            width: 15%;
+        }
         img {
             width: 100%;
             margin-left: 30px;
@@ -157,6 +167,7 @@
     &-nav {
         display: flex;
         justify-content: space-between;
+
         @include breakpoint(mobile) {
             width: 100%;
         }
@@ -167,8 +178,13 @@
 
         &-index {
             display: flex;
-            gap: 115px;
+            gap: 30px;
             margin-left: 50px;
+            @include breakpoint(tablet){
+                display: flex;
+                gap: 24px;
+
+            }
             @include breakpoint(mobile) {
                 width: 100%;
                 gap: 0;
@@ -183,7 +199,6 @@
             }
             @include breakpoint(tabletvertical) {
                 width: 100%;
-                gap: 30px;
                 margin: 30px 0px 0px 0px;
                 justify-content: space-around;
             }
@@ -205,6 +220,11 @@
                 @include breakpoint(tabletvertical) {
                     font-size: 24px;
 
+                }
+                @include breakpoint(tablet) {
+                    color: $blue;
+                    font-family: $font-segundary;
+                    font-weight: 300;
                 }
                    
             }
