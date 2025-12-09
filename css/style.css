@@ -957,26 +957,6 @@ body.general {
     margin: 0;
   }
 }
-.main-general h1 {
-  font-family: "Road Rage", sans-serif;
-  color: #d9451c;
-  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-}
-.main-general h2 {
-  font-family: "Bebas Neue", sans-serif;
-  color: #FFD700;
-  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-}
-.main-general h3 {
-  font-family: "Oswald", sans-serif;
-  color: #E77124;
-  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-}
-.main-general h4 {
-  font-family: "Oswald", sans-serif;
-  color: #0CA6D9;
-  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-}
 
 img.grupo {
   max-width: 100%;
@@ -1261,6 +1241,63 @@ p.aprende span {
   font-size: 16px;
   text-align: center;
   padding: 20px;
+}
+
+.registro-info-title {
+  color: #d9451c;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  max-width: 100%;
+  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+.registro-info-subtitle {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+.registro-info img {
+  width: 100%;
+}
+.registro-formulario {
+  display: flex;
+  justify-content: space-around;
+}
+.registro-formulario p {
+  margin-bottom: 20px;
+}
+
+.registro-formulario label {
+  color: #FFD700;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
+}
+
+.registro-formulario input,
+.registro-formulario textarea {
+  background-color: grey;
+  color: black;
+  text-shadow: 2px 2px 0 #0CA6D9, -2px 2px 0 #0CA6D9, -2px -2px 0 #0CA6D9, 2px -2px 0 #0CA6D9;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.main-login {
+  margin: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-login h1 {
+  color: #d9451c;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  max-width: 100%;
+  filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000;
 }
 
 a {

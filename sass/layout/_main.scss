@@ -10,26 +10,7 @@
     margin: 0;
   }
 
-  h1 {
-    font-family: $font-title;
-    color: $orange;
-    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-  }
-  h2 {
-    font-family: $font-segundary;
-    color: $yellow;
-    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-  }
-  h3 {
-    font-family: $font-primary;
-    color: $orange2;
-    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-  }
-  h4 {
-    font-family: $font-primary;
-    color: $blue;
-    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
-  }
+
 
 
 }
@@ -279,5 +260,76 @@ p.aprende {
     text-align: center;
     padding: 20px;
     
+  }
+}
+  .registro {
+  &-info {
+
+    &-title {
+      color: #d9451c;
+      text-align: center;
+      font-size: 30px;
+      font-family: $font-segundary;
+      font-weight: 900;
+      max-width: 100%;
+      filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+      text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000;
+
+    }
+    &-subtitle {
+      color: $yellow;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+      2px -2px 0 #000;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &-formulario {
+    display: flex;
+    justify-content: space-around;
+    p {
+      margin-bottom: 20px;
+    }
+    
+  }
+
+}
+
+.registro-formulario label {
+  color: $yellow; 
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+  2px -2px 0 #000;             
+}
+
+.registro-formulario input,
+.registro-formulario textarea {
+  background-color: grey;      
+  color: black; 
+  text-shadow: 2px 2px 0 $blue, -2px 2px 0 $blue, -2px -2px 0 $blue,
+  2px -2px 0 $blue;            
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.main-login {
+  margin: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  h1 {
+    color: #d9451c;
+    text-align: center;
+    font-size: 30px;
+    font-family: $font-segundary;
+    font-weight: 900;
+    max-width: 100%;
+    filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
+    text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+    2px -2px 0 #000;
+
   }
 }
