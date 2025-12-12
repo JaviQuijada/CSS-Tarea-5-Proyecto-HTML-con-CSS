@@ -53,6 +53,9 @@
                       @include breakpoint(mobile-xl) {
                         font-size: 12px;
                         }
+                        @include breakpoint(mobile-rotate) {
+                            font-size: 22px;
+                            }
  
                 }
             }
@@ -88,6 +91,9 @@
                     font-size: 70px;
                   }
                 @include breakpoint(tabletvertical) {
+                    margin-top: 50px;
+                }
+                @include breakpoint(mobile-rotate) {
                     margin-top: 50px;
                 }
                 @include breakpoint(mobile-xl) {
@@ -211,7 +217,9 @@
                 filter: drop-shadow(12px 32px 20px rgb(0, 0, 0));
                 @include breakpoint(mobile) {
                     font-size: 12px;
-
+                }
+                @include breakpoint(mobile-rotate) {
+                    font-size: 18px;
                 }
                 @include breakpoint(mobile-xl) {
                     font-size: 12px;

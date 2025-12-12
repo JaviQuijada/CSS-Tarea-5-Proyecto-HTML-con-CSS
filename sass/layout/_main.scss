@@ -21,6 +21,7 @@ img.grupo {
   @include breakpoint(mobile) {
     flex-direction: column;
   }
+
   @include breakpoint(mobile-xl) {
     flex-direction: column;
   }
@@ -33,6 +34,12 @@ img.grupo {
     font-weight: 900;
     filter: drop-shadow(-1px 14px 4px rgb(0, 0, 0));
     @include breakpoint(mobile) {
+      text-align: center;
+      font-size: 43px;
+      max-width: 100%;
+      width: 100%;
+    }
+    @include breakpoint(mobile-rotate) {
       text-align: center;
       font-size: 43px;
       max-width: 100%;
@@ -69,6 +76,9 @@ img.grupo {
     @include breakpoint(tabletvertical) {
       max-width: 100%;
       font-size: 26px;
+    }
+    @include breakpoint(mobile-rotate) {
+      font-size: 18px;
     }
   }
 }
@@ -188,7 +198,7 @@ p.aprende {
       grid-template-columns: 1fr;
       @include breakpoint(tabletvertical) {
         position: relative;
-        top: 622px;
+        top: 954px;
         left: 199px;
       }
       @include breakpoint(tablet) {
@@ -201,6 +211,11 @@ p.aprende {
         top: 305px;
         left: 839px;
       }
+      @include breakpoint(mobile-rotate) {
+        left: 424px;
+        position: relative;
+        top: 37px;
+      }
 
       li {
         display: flex;
@@ -210,6 +225,9 @@ p.aprende {
       h3 {
         font-size: 21px;
         text-shadow: 2px -2px 0 #000;
+        @include breakpoint(mobile-rotate) {
+          font-size: 18px;
+        }
       }
       h4 {
         font-size: 24px;
@@ -252,7 +270,11 @@ p.aprende {
       max-width: 59%;
       margin-bottom: 206px;
       margin-top: 43px;
-  }
+    }
+    @include breakpoint(mobile-rotate) {
+      font-size: 43px;
+    }
+
   }
   p {
     font-size: 35px;
@@ -275,6 +297,11 @@ p.aprende {
     @include breakpoint(smalldesktop) {
       width: 30%;
       left: 738px;
+    }
+    @include breakpoint(mobile-rotate) {
+      left: 352px;
+      width: 50%;
+      bottom: 151px;
     }
   }
 }

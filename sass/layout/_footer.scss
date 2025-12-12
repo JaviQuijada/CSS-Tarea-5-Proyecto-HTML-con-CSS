@@ -63,6 +63,13 @@
         margin: 0px 20px 31px 0px;
         border-radius: 10%;
     }
+    @include breakpoint(mobile-rotate) {
+      padding: 0;
+      width: 100%;
+      font-size: 18px;
+      margin: 0px 20px 31px 0px;
+      border-radius: 10%;
+  }
 
     a {
       font-size: 30px;
@@ -93,6 +100,11 @@
         width: 54%;
         font-size: 12px;
       }
+      @include breakpoint(mobile-rotate) {
+        padding: 0;
+        width: 18%;
+        font-size: 12px;
+      }
     }
     span {
       font-size: 30px;
@@ -109,6 +121,9 @@
       @include breakpoint(mobile) {
         font-size: 12px;
         margin: 0;
+      }
+      @include breakpoint(mobile-rotate) {
+        font-size: 12px;
       }
     }
   }
